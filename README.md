@@ -4,6 +4,8 @@ A full-stack subscription application featuring a Black Friday sale with course 
 
 Link : https://black-friday-course-hub-1.onrender.com/
 
+<img width="1708" height="892" alt="image" src="https://github.com/user-attachments/assets/619a8681-428e-49c8-95c9-00a4817cef84" />
+
 
 ## 🎯 Project Overview
 
