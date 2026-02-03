@@ -23,17 +23,16 @@ export interface Subscription {
   promoCode?: string | null;
 }
 
-// ==========================================
+
 // IMPORTS
-// ==========================================
 
 import axios from "axios";
 
-// ==========================================
-// API BASE URL
-// ==========================================
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+// API BASE URL
+
+
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://black-friday-course-hub.onrender.com/api";
 
 
 // AUTH API - Fetch Users from Backend
@@ -178,9 +177,7 @@ export const subscriptionsAPI = {
   },
 };
 
-// ==========================================
-// PROMO CODE SYSTEM
-// ==========================================
+
 
 export const VALID_PROMO_CODE = "BFSALE25";
 export const PROMO_DISCOUNT = 0.5;
@@ -196,9 +193,6 @@ export const calculateDiscountedPrice = (price: number, promoApplied: boolean): 
   return price;
 };
 
-// ==========================================
-// LEGACY EXPORTS (empty - data comes from backend)
-// ==========================================
 
 export const users: User[] = [];
 export const courses: Course[] = [];

@@ -43,7 +43,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       try {
         const userSubscriptions = await (async () => {
           const token = localStorage.getItem("authToken");
-          const response = await fetch("http://localhost:5000/api/subscriptions/", {
+          const response = await fetch("https://black-friday-course-hub.onrender.com/api/subscriptions/", {
             headers: { Authorization: `Bearer ${token}` },
           });
           if (response.ok) return await response.json();
@@ -103,7 +103,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       const token = localStorage.getItem("authToken");
       if (!token) return;
       
-      const response = await fetch("http://localhost:5000/api/subscriptions/", {
+      const response = await fetch("https://black-friday-course-hub.onrender.com/api/subscriptions/", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (response.ok) {
